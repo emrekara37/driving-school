@@ -1,0 +1,108 @@
+@page
+@model EhliyetTurkiye.DrivingSchool.Ui.Pages.Settings
+
+@{
+    Layout = "Shared/_Layout";
+}
+@section styles
+{
+    <link rel="stylesheet" type="text/css" href="/lib/packages/core/main.min.css" />
+    <link rel="stylesheet" type="text/css" href="/lib/packages/daygrid/main.min.css" />
+
+}
+<div class="app-content content">
+    <div class="content-wrapper">
+        <div class="content-header row mb-1">
+            <div class="content-header-left col-md-6 col-12 mb-2 breadcrumb-new">
+                <h3 class="content-header-title mb-0 d-inline-block">Basic Forms</h3>
+                <div class="row breadcrumbs-top d-inline-block">
+                    <div class="breadcrumb-wrapper col-12">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a>
+                            </li>
+                            <li class="breadcrumb-item"><a href="#">Form Layouts</a>
+                            </li>
+                            <li class="breadcrumb-item active">Basic Forms
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="content-header-right col-md-6 col-12">
+                <div class="btn-group float-md-right">
+                    <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</button>
+                    <div class="dropdown-menu arrow"><a class="dropdown-item" href="#"><i class="fa fa-calendar-check mr-1"></i> Calender</a><a class="dropdown-item" href="#"><i class="fa fa-cart-plus mr-1"></i> Cart</a><a class="dropdown-item" href="#"><i class="fa fa-life-ring mr-1"></i> Support</a>
+                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fa fa-cog mr-1"></i> Settings</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-body">
+            <!-- Basic form layout section start -->
+            <section id="basic-form-layouts">
+                <div class="row match-height">
+                    <div class="col-12">
+                        <div class="card" style="height: 1001.5px;">
+                            <div class="card-header">
+                                <h4 class="card-title" id="basic-layout-form">Project Info</h4>
+                                <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                                <div class="heading-elements">
+                                    <ul class="list-inline mb-0">
+                                        <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                        <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                        <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                                        <li><a data-action="close"><i class="ft-x"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-content collapse show">
+                                <div class="card-body">
+                                    <div class="card-text">
+                                        <p>This is the most basic and default form having form sections. To add form section use <code>.form-section</code> class with any heading tags. This form has the buttons on the bottom left corner which is the default position.</p>
+                                    </div>
+                                    <div id="calendar"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+
+            </section>
+            <!-- // Basic form layout section end -->
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+    <script src="/lib/packages/core/main.min.js"></script>
+    <script src="/lib/packages/daygrid/main.min.js"></script>
+    <script src="/lib/packages/interaction/main.min.js"></script>
+    <script src="/lib/packages/core/locales/tr.js"></script>
+    <script src="/lib/packages/bootstrap/main.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                plugins: [ 'interaction', 'dayGrid','bootstrap' ],
+                timeZone: 'UTC',
+                locale:'tr',
+                defaultView: 'dayGridWeek',
+                header: {
+                    left: 'prev,next',
+                    center: 'title',
+                    right: 'dayGridDay,dayGridWeek'
+                },
+                editable: true,
+                events: 'https://fullcalendar.io/demo-events.json'
+            });
+
+            calendar.render();
+        });
+    </script>
+}

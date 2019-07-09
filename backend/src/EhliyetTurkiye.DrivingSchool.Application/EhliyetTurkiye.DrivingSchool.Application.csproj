@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <RootNamespace>EhliyetTurkiye.DrivingSchool</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EhliyetTurkiye.DrivingSchool.Domain\EhliyetTurkiye.DrivingSchool.Domain.csproj" />
+    <PackageReference Include="FluentFTP" Version="23.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.2" />
+    <PackageReference Include="PushBulletSharp" Version="3.1.0" />
+    <PackageReference Include="Volo.Abp.Identity.Application" Version="0.14.0" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="0.14.0" />
+  </ItemGroup>
+
+</Project>

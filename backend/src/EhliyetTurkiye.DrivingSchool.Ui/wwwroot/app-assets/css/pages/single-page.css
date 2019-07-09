@@ -1,0 +1,241 @@
+.kw-wrapper .badge
+{
+    margin-right: 1px; 
+    margin-bottom: 5px;
+}
+
+.faq .accordion .card
+{
+    margin: 0 .25rem;
+
+    border-bottom: 1px solid #f4f5fa !important;
+}
+.faq .accordion .card:last-child
+{
+    border: none !important;
+}
+
+.faq .accordion .card-text
+{
+    padding: .25rem 1.25rem;
+}
+
+.faq .accordion .btn
+{
+    text-align: left; 
+    white-space: normal;
+}
+
+.loan-wrapper .checked
+{
+    margin-right: 2px;
+}
+
+.loan-wrapper.dataTable td
+{
+    border-top: none;
+}
+
+.account-wrapper .form-check
+{
+    display: inline;
+}
+
+.checked
+{
+    margin-right: 2px;
+}
+
+.card-wrapper .action i.success
+{
+    margin-right: .1rem;
+}
+
+.card-wrapper.dataTable td
+{
+    border-top: none;
+}
+
+.pending-payment.dataTable td,
+.completed-payment.dataTable td
+{
+    border-top: none;
+}
+
+.table-wrapper .ac-symbol i
+{
+    font-size: 1.7rem;
+}
+
+.table-wrapper .ac-symbol.saving i
+{
+    color: #28d094;
+}
+
+.table-wrapper .ac-symbol.joint i
+{
+    color: #ff9149;
+}
+
+.table-wrapper .ac-symbol.loan i
+{
+    color: #ff4961;
+}
+
+.table-wrapper .ac-symbol.current i
+{
+    color: #1e9ff2;
+}
+
+.table-wrapper.dataTable td
+{
+    border-top: none;
+}
+
+#commentForm label.error
+{
+    color: #ff4961;
+}
+
+.trans-wrapper i:before
+{
+    font-size: 1rem;
+
+    margin-right: .5rem;
+}
+
+.wallet-wrapper.dataTable td
+{
+    border-top: none;
+}
+
+.wallet-wrapper .currency
+{
+    font-weight: bold;
+}
+.wallet-wrapper .currency i.cc
+{
+    font-size: 1.4rem;
+
+    margin-right: .5rem;
+}
+
+.wallet-wrapper .transact
+{
+    font-size: .8rem;
+    font-weight: bold; 
+
+    text-transform: uppercase;
+
+    color: #1e9ff2;
+}
+.wallet-wrapper .transact i:before
+{
+    font-size: 1rem;
+
+    display: inline;
+
+    margin-right: .1rem;
+
+    color: #28d094;
+}
+@media only screen and (max-width: 824px)
+{
+    .wallet-wrapper .transact i
+    {
+        display: none;
+    }
+}
+
+.history-wrapper.dataTable td
+{
+    border-top: none;
+}
+
+.history-wrapper i:before
+{
+    font-size: 1.4rem;
+
+    margin-right: .8rem;
+}
+
+.exchange.btn
+{
+    width: 150px; 
+
+    border-radius: 50px;
+}
+
+.exchange i
+{
+    margin-right: 1rem;
+}
+
+.customer-wrapper.dataTable td
+{
+    border-top: none;
+}
+
+.customer-wrapper i:before
+{
+    font-size: 1rem; 
+
+    margin-right: .3rem;
+}
+
+.customer-wrapper .option i:before
+{
+    font-size: 1.4rem; 
+
+    margin-right: .3rem;
+}
+
+.customer-wrapper .email i
+{
+    color: #1e9ff2;
+}
+
+.customer-wrapper .tickets i
+{
+    color: #babfc7;
+}
+
+@media only screen and (max-width: 991px)
+{
+    .customer-wrapper .email i
+    {
+        display: none;
+    }
+}
+
+.wizard-info.wizard.wizard-notification .steps ul li:before,
+.wizard-info.wizard.wizard-notification .steps ul li:after
+{
+    background-color: #1e9ff2;
+}
+
+.wizard-info.wizard.wizard-notification .steps ul li.current .step
+{
+    line-height: 36px; 
+
+    color: #1e9ff2;
+    border: 2px solid #1e9ff2;
+}
+.wizard-info.wizard.wizard-notification .steps ul li.current .step:after
+{
+    border-top-color: #1e9ff2;
+}
+
+.wizard-info.wizard.wizard-notification .steps ul li.done .step
+{
+    border-color: #1e9ff2; 
+    background-color: #1e9ff2;
+}
+.wizard-info.wizard.wizard-notification .steps ul li.done .step:last-child
+{
+    color: #fff;
+}
+.wizard-info.wizard.wizard-notification .steps ul li.done .step:after
+{
+    border-top-color: #1e9ff2;
+}

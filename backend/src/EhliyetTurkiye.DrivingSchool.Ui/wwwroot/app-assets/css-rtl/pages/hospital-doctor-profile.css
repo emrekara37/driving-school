@@ -1,0 +1,39 @@
+#doctor-profile .clndr-controls
+{
+    color: black; 
+    background: white !important;
+}
+
+#doctor-profile .days-of-the-week
+{
+    background: #1e9ff2;
+}
+
+#doctor-profile .day-number
+{
+    border-color: #1e9ff2;
+}
+
+#doctor-profile .today
+{
+    background: #1e9ff2;
+}
+
+#doctor-profile .event-listing-title
+{
+    background: #28d094;
+}
+
+/* Add Following Style To make Calendar Responsive in Small Screens */
+@media (max-width: 600px)
+{
+    .clndr .clndr-grid
+    {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .clndr .event-listing
+    {
+        width: 100%;
+    }
+}
