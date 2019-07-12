@@ -14,7 +14,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
     <ProjectReference Include="..\EhliyetTurkiye.DrivingSchool.Application.Tests\EhliyetTurkiye.DrivingSchool.Application.Tests.csproj" />
-    <ProjectReference Include="..\..\src\EhliyetTurkiye.DrivingSchool.Web\EhliyetTurkiye.DrivingSchool.Web.csproj" />
     <PackageReference Include="Volo.Abp.AspNetCore.TestBase" Version="0.14.0" />
   </ItemGroup>
 
